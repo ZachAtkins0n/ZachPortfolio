@@ -80,15 +80,13 @@
             <div class="work__text">
               <h3>Sim2Real Project</h3>
               <p>
-                A free Open Source Portfolio for anyone to use for free.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
-              </ul>
-
+               This project focused on sim-to-real transfer using NVIDIA Isaac Sim and Isaac Lab to control a UR3 robotic arm and Robotiq 2F-85mm gripper for a pick-and-place task.
+                    I developed digital twin of the robot was developed in Isaac Sim and integrated with Isaac Lab, where I gained an understanding in reinforcement learning (RL)using a Markov Decision Process (MDP). I trained a reward-based policy to achieve pick and place that was successful. Whilst achieivng a successful RL policy achieved partial success, I believe the policycould benefit from enhanced strategies such as dual-policy architectures or imitation learning to improve performance and generalisation.
+                   </p>
+                  <p class="mb-4">
+                    For deployment, the trained policy would be transferred from simulation to the physical robot using the joint observations as well as ROS to interface to the UR3. Due to location between the robot and simulation I could not achieve a direct interface from simulation to the robot. Instead I opted to develop TCP socket communication method
+                    to communicate between the simulation pc (client) and to the a device (server) to connect to the robot itself remotely using TCP sockets over a VPN. This led to successful control over the physical robot itself using my trained policy.
+                  </p>
               <div class="work__links">
                 <a href="https://nisar.surge.sh" target="_blank" class="link__text">
                   Visit Site <span>&rarr;</span>
