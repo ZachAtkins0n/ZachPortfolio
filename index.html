@@ -75,20 +75,23 @@
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
-
+          <!-- Project groups-->
           <div class="work__box">
             <div class="work__text">
               <h3>Sim2Real Project</h3>
               <p>
                This project focused on sim-to-real transfer using NVIDIA Isaac Sim and Isaac Lab to control a UR3 robotic arm and Robotiq 2F-85mm gripper for a pick-and-place task.
-                    I developed digital twin of the robot was developed in Isaac Sim and integrated with Isaac Lab, where I gained an understanding in reinforcement learning (RL)using a Markov Decision Process (MDP). I trained a reward-based policy to achieve pick and place that was successful. Whilst achieivng a successful RL policy achieved partial success, I believe the policycould benefit from enhanced strategies such as dual-policy architectures or imitation learning to improve performance and generalisation.
+                    I developed digital twin of the robot was developed in Isaac Sim and integrated with Isaac Lab, where I gained an understanding in reinforcement learning (RL) using a Markov Decision Process (MDP) in python. I trained a reward-based policy to achieve pick and place that was successful. Whilst achieivng a successful RL policy achieved partial success, I believe the policycould benefit from enhanced strategies such as dual-policy architectures or imitation learning to improve performance and generalisation.
                    </p>
                   <p class="mb-4">
                     For deployment, the trained policy would be transferred from simulation to the physical robot using the joint observations as well as ROS to interface to the UR3. Due to location between the robot and simulation I could not achieve a direct interface from simulation to the robot. Instead I opted to develop TCP socket communication method
                     to communicate between the simulation pc (client) and to the a device (server) to connect to the robot itself remotely using TCP sockets over a VPN. This led to successful control over the physical robot itself using my trained policy.
                   </p>
               <div class="work__links">
-                
+                <li>Python</li>
+                <li>Reinforcement Learning</li>
+                <li>Sim2Real</li>
+    
                 <a href="https://github.com/ZachAtkins0n/ZachPortfolio.git" title="View Repo" target="_blank">
                   <img src="./images/github.svg" class="work__code" alt="GitHub">
                 </a>
@@ -101,29 +104,29 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Test</h3>
+              <h3>Isaac Braccio</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+               This is a new project that I have started to work on involving the tinkerkit Braccio robot arm: https://store.arduino.cc/products/tinkerkit-braccio-robot. I've built the physical model which can be controlled using an Arduino UNO.
+                  </p>
               </p>
+              <p class="mb-4">
+                   I developed a digital twin of the Isaac Braccio using the available CAD files. There the joints were abled to be controlled and the model is now compatible in Isaac Lab. I plan to incorporate some of the Isaac Sim ecosystem for this model such as Isaac Lab to perform robot learning. Morover, using
+                   Isaac Sim/Lab I wish to acheive a form of teleoperation with the physical device. 
+                  </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>C++</li>
+                <li>Python</li>
+              
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
+                <a href="https://github.com/ZachAtkins0n/Isaac_Braccio">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <img src="./images/BraccioTwin.png" class="work__image" alt="Isaac Braccio" />
             </div>
           </div>
 
