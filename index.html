@@ -79,12 +79,13 @@
             <div class="work__text">
               <h3>Sim2Real Project</h3>
               <p>
-               This project focused on sim-to-real transfer using NVIDIA Isaac Sim and Isaac Lab to control a UR3 robotic arm and Robotiq 2F-85mm gripper for a pick-and-place task.
-                    I developed a digital twin model of the phsyical robot in Isaac Sim which integrated with Isaac Lab, where I gained an understanding in reinforcement learning (RL) using a Markov Decision Process (MDP) in python. I trained a reward-based policy to achieve pick and place that was successful. Whilst achieivng a successful RL policy achieved partial success, I believe the policycould benefit from enhanced strategies such as dual-policy architectures or imitation learning to improve performance and generalisation.
-                   </p>
-                  <p class="mb-4">
-                    For deployment, the trained policy would be transferred from simulation to the physical robot using the joint observations as well as ROS to interface to the UR3. Due to location between the robot and simulation I could not achieve a direct interface from simulation to the robot. Instead I opted to develop TCP socket communication method
-                    to communicate between the simulation pc (client) and to the a device (server) to connect to the robot itself remotely using TCP sockets over a VPN. This led to successful control over the physical robot itself using my trained policy. A video example can be found in the repository.
+              This project focused on sim-to-real transfer for robotic control using NVIDIA Isaac Sim and Isaac Lab. I developed a digital twin of the UR3 robotic arm and the Robotiq 2F-85mm gripper in Isaac Sim, integrated with Isaac Lab for reinforcement learning (RL). Through this setup, I gained hands-on experience in training an RL policy using a Markov Decision Process (MDP) in Python to perform a pick-and-place task.</p>
+              <p class="mb-4">
+                The trained reward-based policy successfully demonstrated the target behavior in simulation. While partially successful in real-world deployment, I identified opportunities for improvement through advanced techniques such as dual-policy architectures or imitation learning to enhance policy performance and generalization.
+                </p>
+              <p class="mb-4">
+                    For deployment, the trained policy would be transferred from simulation to the physical robot using the joint observations as well as ROS to interface to the UR3. Due to location between the robot and simulation I could not achieve a direct interface from simulation to the robot. 
+                    Instead I opted to develop TCP socket communication method to communicate between the simulation pc (client) and to the a device (server) to connect to the robot itself remotely using TCP sockets over a VPN. This led to successful control over the physical robot itself using my trained policy. A video example can be found in the repository.
                   </p>
                   <p class="mb-4">
                     Key Skills: Python, Reinforcement Learning, TCP Sockects, ROS, Sim2Real
@@ -133,12 +134,13 @@
             <div class="work__text">
               <h3>Piano Exoskeleton Hand</h3>
               <p>
-              This project was a group business design project. This project was to a develop an exoskeleton hand for piano teaching as well as looking into the business side of this product in. This worked by having a master glove monitoring the wearer's finger movement which would then be wireless 
-              reflected onto the slave hand would be the exoskeleton hand. 
-              
+              This group project focused on the development and business design of an exoskeleton hand aimed at enhancing piano teaching. The system functioned by using a master glove to monitor a user’s finger movements, which were then wirelessly mirrored by a slave exoskeleton hand, providing real-time motion replication for educational or assistive purposes.
               </p>
                   <p class="mb-4">
-                    For the technical side we made use of Arduinos to achieve actuation. I was in charge of establishing a local wireless network as well as integrating the team's sub components together. Moreover, I was in charge of the commerical viability for our product.
+                    On the technical side, we utilized Arduino microcontrollers to drive the actuation system. My role involved establishing a local wireless communication network between the master and slave devices and integrating the various technical subsystems developed by team members into a cohesive, functioning prototype.
+                  </p>
+                  <p class="mb-4">
+                    In addition to my technical responsibilities, I led the commercial viability analysis of the product. This included market research, competitive analysis, and outlining a potential business model to assess the feasibility of bringing the product to market.
                   </p>
                   <p class="mb-4">
                     Key Skills: Arduino, C++, Wireless, Business, Presentation
@@ -169,12 +171,12 @@
           <div class="work__box">
             <div class="work__text">
               <h3>Placement Year: Control Systems Engineer ATLAS ELEKTRONIK </h3>
-              <p>
-              For my degree, I had a year in industry working at ATLAS ELEKTRONIK. I had some experience in learning about ladder logic and PLC concepts. Furthermore, I worked in the software as well, both on indiviudal and team projects. 
-              </p>
+              <p>As part of my degree, I completed a year-long industrial placement at ATLAS ELEKTRONIK UK, where I gained valuable experience in both software development and industrial control systems. I was introduced to PLC concepts and ladder logic, which broadened my understanding of embedded and automation systems.</p>
                   <p class="mb-6">
-                    During the team projects I collaborated with other placement students in developing software solutions for the task at hand. We developed our solutions from the ground up following an agile methodolgy and conducted sprints for development. 
-                    For our project solutions we would present our work in front of others. Futhermore, I also did a project handover for others to take over the project. I ensured good coding practices as well as documentation to aid my team members and stakeholders. 
+                    In the software domain, I worked on both individual and team-based projects. As part of a collaborative environment with other placement students, we followed Agile methodology, using sprints to iteratively design, develop, and refine software solutions from the ground up. We regularly conducted presentations to showcase our progress and outcomes to stakeholders and technical leads.
+                  </p>
+                  <p class="mb-6">
+                   I was also responsible for a project handover, ensuring the smooth transition of ongoing work to future developers. I focused on maintaining clean code practices, writing clear and thorough documentation, and supporting knowledge transfer within the team to enhance continuity and collaboration.
                   </p>
                   <p class="mb-4">
                     Key Skills: Python, R&D, JIRA
@@ -195,8 +197,15 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              A recent graduate from University of Bath that studied MEng Robotic Engineering looking to start their professional professional career. I am experienced with programming software and concepts such as python and C++. I have experience in working with machine learning both supervised and unsupervised as well as working with embedded systems using C++ on Arduinos and STM32s
-              as well as Raspberry Pi. I enjoy robotics as well as other activites such as climbing and running. Please see my CV to know more about myself.
+             I am a recent MEng Robotics Engineering graduate from the University of Bath, eager to begin my professional career in robotics, software development, or embedded systems. I have a solid foundation in programming with experience in Python and C++,
+              and I’ve applied these skills across a range of projects, including supervised and unsupervised machine learning, and embedded systems development using Arduino, STM32, and Raspberry Pi platforms.
+            </p>
+            <p>
+              My academic and project work has equipped me with both practical engineering skills and a collaborative mindset, developed through individual and team-based challenges. I am particularly passionate about robotics and automation, and enjoy tackling technical problems in innovative ways.
+            </p>
+            <p>
+              Outside of engineering, I’m an active individual who enjoys climbing and running, which helps me stay focused and maintain a healthy work-life balance. For more details about my experience and skills, please refer to my CV.
+
             </p>
             <!-- Provide a link to your resume -->
             <a href="./images/Zachary_Atkinson_CV.pdf" class="btn">My CV</a>
